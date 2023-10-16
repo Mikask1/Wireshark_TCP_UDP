@@ -33,3 +33,6 @@
 #### Steps:
 1. Untuk menganalisis data sent per unit time, kita dapat membuka Statistics
 2. Kemudian, TCP Stream Graphs > Time Sequence (Stevens)
+3. Kemudian di bagian bawah kanan, tekan `Switch Directions`
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/c4ef3529-0ab0-4779-a653-5c1d588792fa)
+
