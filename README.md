@@ -58,7 +58,9 @@ Largest Port Number: 16 bit = 65535
 ### Soal 6
 Protocol Number: 17
 ### Soal 7
-Pada packet capture, tidak terdapat UDP packet yang saling reply, maka kita akan capture packet yang baru dengan mengcapture `nslookup` command
+Pada packet capture, tidak terdapat UDP packet yang saling reply, maka kita akan capture packet yang baru dengan mengcapture `nslookup` command.
+
 ![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/330e4dc0-afce-4b17-a398-874a48afc7cc)
+
 Packet Number: 10 dan 11
 Relationship: Sending Data diantara 172.20.10.3 dan 142.250.82.101
