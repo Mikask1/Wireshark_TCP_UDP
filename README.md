@@ -36,3 +36,29 @@
 3. Kemudian di bagian bawah kanan, tekan `Switch Directions`
 ![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/c4ef3529-0ab0-4779-a653-5c1d588792fa)
 
+## UDP
+- Kita akan menggunakan packet capture di bagian TCP di atas.
+### Soal 1
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/c3c63f93-4229-43d5-b39c-f64aec21cdef)
+Packet Number: 11
+Protocol: UDP
+Number of UDP Header Fields: 4 (Source Port, Destination Port, Length, Checksum)
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/33c21748-190d-4d2f-96de-36875a5e7b47)
+### Soal 2
+Source Port: 2 bytes (16 bits)
+Destination Port: 2 bytes (16 bits)
+Length: 2 bytes (16 bits)
+Checksum: 2 bytes (16 bits)
+### Soal 3
+Field Length dalam UDP Header adalah panjang dari header + payload dari UDP packet.
+### Soal 4
+Maximum UDP Payload Length = 65535 byte (16-bit length field) - 8 byte (UDP header) = 65527 bytes
+### Soal 5
+Largest Port Number: 16 bit = 65535
+### Soal 6
+Protocol Number: 17
+### Soal 7
+Pada packet capture, tidak terdapat UDP packet yang saling reply, maka kita akan capture packet yang baru dengan mengcapture `nslookup` command
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/330e4dc0-afce-4b17-a398-874a48afc7cc)
+Packet Number: 10 dan 11
+Relationship: Sending Data diantara 172.20.10.3 dan 142.250.82.101
