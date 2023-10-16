@@ -12,22 +12,57 @@
 ![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/095c4ce4-9ed3-4c84-814c-cbb3322ca25c)
 
 ### 2. Look at the captured trace
-#### Steps:
-1. Cari paket dengan HTTP method POST dengan filter `http.request.method == "POST"`
+#### Soal 1
+Cari paket dengan HTTP method POST dengan filter `http.request.method == "POST"`
 ![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/84badb28-b9d8-4d04-bded-d7f0b190657b)
+Port `54478` dan IP Address `172.20.10.3`
+### Soal 2
+Untuk IP address `gaia.cs.umass.edu adalah` `128.119.245.12`
 
-3. Kemudian, kita bisa lihat bahwa POST request kita terbagi menjadi berbagai paket (dalam contoh 41 paket)
-4. Dan, kita dapat mengamati three-way handshake TCP'
-5. Lalu, dapat kita amati bahwa client mengirim request dari port 54478 dan IP Address `172.20.10.3`
-6. Untuk IP address gaia.cs.umass.edu adalah `128.119.245.12`
+### Soal 3
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/0851ce47-153a-4fc8-ae78-02deddb76a79)
+Sequence Number: 2903203422
+SYN Flag: 0x002
+SACK dapat digunakan di SYN Segment
 
-### 3. TCP Basics
-#### Steps:
-![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/7ca8928c-3400-4907-9da4-6a7f4cd03c32)
-1. Dalam request, tidak terdapat SYN ACK, hanya ada FIN ACK
-2. Akan tetapi, untuk melihat Sequence Number dan Acknowledgment Number di bagian TCP
-3. Sequence Number dari paket POST adalah `2751537243`
-4. Length of the first four payload: 761, 12654, 1454, 2854
+### Soal 4
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/57a32fa6-6109-4998-ac07-3b19aa5d03ec)
+Sequence Number: 1637555458
+Acknowledgement: 1238883282
+SYNACK Flag: 0x012
+Acknowledgement Number adalah sequence number dari paket TCP berikutnya.
+
+### Soal 5
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/9322d3bc-605f-483d-8077-024a038985db)
+Sequence Number: 1239023989
+alice.txt: 153028 bytes
+Packet Payload: 12321 bytes
+Ada 23 reassembled TCP Segments
+
+### Soal 6
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/47cd7650-9c29-417d-ae80-170b302efe24)
+
+- First segment was sent on the 5.093565s mark
+- First ACK time: 5.095600s
+- RTT First: 0.318125000s
+- RTT ACK: 0.318125000s
+- EstimatedRTT: 0.318125000s
+### Soal 7
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/d3156c28-f42d-4c3c-944e-9271ecb0c088)
+Length: 32 + 739 = 761
+Length: 32 + 12622 = 12654
+Length: 32 + 4222 = 4254
+Length: 32 + 5622 = 5654
+
+### Soal 8
+Minimum: 131583
+
+### Soal 9
+Ada, retransmission segments bisa dicari lewat sequence number.
+
+### Soal 10
+![image](https://github.com/Mikask1/Wireshark_TCP_UDP/assets/88318140/1c27c141-7df3-4c62-a8ef-87ec5c770cd6)
+The data varies from 707-11200 bytes.
 
 ### 4. TCP Congestion Control
 #### Steps:
